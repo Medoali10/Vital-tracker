@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F5F97"
+    tools:context=".hospitago.main_hospital">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:background="@drawable/back_hospital"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_bell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="267dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/anaheim"
+        android:text="By disabling your account. it will be  no longer visible to patients"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_edit"
+        app:layout_constraintEnd_toEndOf="@+id/btn_change"
+        app:layout_constraintStart_toStartOf="@+id/btn_change" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:background="@drawable/rounded_background"
+        android:text="Disable your account"
+        android:textAllCaps="false"
+        android:textColor="#3F5F97"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="297dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="176dp"
+        android:fontFamily="@font/anaheim"
+        android:text="Edit your data to make your account more acessible to the patients"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_background"
+        android:text="Activate or Edit your account"
+        android:textAllCaps="false"
+        android:textColor="#3F5F97"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

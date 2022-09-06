@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#473F97"
+
+    tools:context=".statistics.Detailed_statistics">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        
+        android:layout_width="296dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        android:background="@color/cases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="113dp"
+                                android:layout_height="36dp"
+                                android:layout_marginStart="104dp"
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="@font/graphikmedium"
+                                android:text="Updated"
+                                android:textSize="20sp"
+                                android:textColor="#fff"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtUpdated"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="44dp"
+                                android:textColor="#fff"
+                                android:layout_marginBottom="16dp"
+                                android:fontFamily="@font/graphiksemibold"
+                                android:text="9,750"
+                                android:textSize="24sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="296dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="56dp"
+        android:background="@color/cases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:textColor="#fff"
+
+                        android:layout_width="88dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="116dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/graphikmedium"
+                        android:text="Tests"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtTests"
+                        android:textColor="#fff"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="88dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/graphiksemibold"
+                        android:text="9,750"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        
+        android:layout_width="296dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="56dp"
+        android:background="@color/recovered"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:textColor="#fff"
+
+                                android:layout_width="88dp"
+                                android:layout_height="35dp"
+                                android:layout_marginStart="104dp"
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="@font/graphikmedium"
+                                android:text="Critical"
+                                android:textSize="20sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:textColor="#fff"
+
+                                android:id="@+id/txtCritical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="112dp"
+                                android:layout_marginBottom="16dp"
+                                android:fontFamily="@font/graphiksemibold"
+                                android:text="9,750"
+                                android:textSize="24sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="296dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="56dp"
+        android:background="@color/deaths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="88dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/graphikmedium"
+                android:text="Active"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:textColor="#fff"
+                android:id="@+id/txtActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/graphiksemibold"
+                android:text="9,750"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout2"
+        android:layout_width="296dp"
+        android:layout_height="116dp"
+        android:background="@color/deaths"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.123">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    tools:layout_editor_absoluteY="0dp">
+
+                                    <TextView
+                                        android:textColor="#fff"
+
+                                        android:layout_width="211dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="52dp"
+                                        android:layout_marginTop="24dp"
+                                        android:fontFamily="@font/graphikmedium"
+                                        android:text="Affected Countries"
+                                        android:textSize="20sp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:textColor="#fff"
+
+                                        android:id="@+id/txtAffected"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="132dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:fontFamily="@font/graphiksemibold"
+                                        android:text="9,750"
+                                        android:textSize="24sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/why_info"
+        android:layout_width="282dp"
+        android:layout_height="69dp"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.859">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="0dp">
+
+                            <TextView
+
+                                android:layout_width="346dp"
+                                android:layout_height="46dp"
+                                android:layout_marginStart="15dp"
+                                android:fontFamily="@font/graphiksemibold"
+                                android:text="Why this information is important?"
+                                android:textSize="14sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

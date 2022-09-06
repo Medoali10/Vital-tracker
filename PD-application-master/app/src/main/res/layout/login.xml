@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F5F97"
+    tools:context=".hospitago.Login">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="266dp"
+        android:layout_height="207dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/edusername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/hospital_login" />
+
+    <EditText
+        android:id="@+id/edusername"
+        android:layout_width="328dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/rounded_background"
+        android:drawablePadding="35dp"
+        android:hint="username"
+        android:inputType="text"
+        android:fontFamily="@font/anaheim"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#999"
+        app:layout_constraintBottom_toTopOf="@+id/edpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825" />
+
+    <EditText
+        android:id="@+id/edpassword"
+        android:layout_width="321dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/rounded_background"
+        android:drawablePadding="35dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#999"
+        android:fontFamily="@font/anaheim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/loginBtn"
+        android:layout_width="171dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_hospital_elevated"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edpassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toTopOf="@+id/loginBtn" />
+
+    <ImageButton
+        android:id="@+id/registerBtn"
+        android:layout_width="154dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/back_hospital_elevated"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerBtn"
+        app:layout_constraintEnd_toEndOf="@+id/registerBtn"
+        app:layout_constraintStart_toStartOf="@+id/registerBtn"
+        app:layout_constraintTop_toTopOf="@+id/registerBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

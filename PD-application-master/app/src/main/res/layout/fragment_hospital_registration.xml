@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3F5F97"
+    android:layout_height="match_parent"
+    tools:context=".hospitago.hospital_registration"
+    >
+
+
+    <LinearLayout
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/ed_hospital_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:hint="hospital name"
+            android:inputType="text"
+            android:fontFamily="@font/anaheim"
+            android:background="@drawable/rounded_background"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/ed_hospital_username"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/anaheim"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/ed_hospital_password"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/anaheim"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/anaheim"
+            android:id="@+id/ed_hospital_phone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:hint="Hospital Phone "
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/anaheim"
+            android:id="@+id/ed_hospital_perosnphone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:hint="Personal Phone "
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/anaheim"
+            android:id="@+id/ed_hospital_position"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:gravity="left|center"
+            android:hint="Position in the hospital"
+            android:onClick="showPopup2"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/ed_hospital_adress"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/anaheim"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:hint="Hospital Address "
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:text="Terms and conditions: please notice that creating a false hospital account is considered illegal and you will be punished for it ."
+                android:textColor="#eee"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <CheckBox
+                android:id="@+id/ch_hospital_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="#ccc"
+                android:paddingRight="15dp"
+                android:text="I agree on the terms and conditions of using the application ."
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_hospital_registration"
+            android:layout_width="143dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back_hospital_elevated"
+            android:drawablePadding="10dp"
+            android:onClick="registration2"
+            android:padding="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Register"
+            android:fontFamily="@font/anaheim"
+            android:layout_marginTop="-45dp"
+            android:layout_marginStart="155dp"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

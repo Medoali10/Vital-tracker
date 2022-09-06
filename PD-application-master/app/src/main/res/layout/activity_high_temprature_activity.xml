@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lineChart.High_temprature_activity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="336dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/alert_high" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="blslasd"
+        android:textSize="22sp"
+        android:textColor="#473F97"
+        android:fontFamily="@font/graphiksemibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <ImageButton
+        android:id="@+id/emergency"
+        android:layout_width="319dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/purple_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/graphikregular"
+        android:text="Emergency"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/emergency"
+        app:layout_constraintEnd_toEndOf="@+id/emergency"
+        app:layout_constraintStart_toStartOf="@+id/emergency"
+        app:layout_constraintTop_toTopOf="@+id/emergency" />
+
+    <ImageButton
+        android:id="@+id/find_hospital"
+        android:layout_width="319dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/purple_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/graphikregular"
+        android:text="Find a hospital"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/find_hospital"
+        app:layout_constraintEnd_toEndOf="@+id/find_hospital"
+        app:layout_constraintStart_toStartOf="@+id/find_hospital"
+        app:layout_constraintTop_toTopOf="@+id/find_hospital" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

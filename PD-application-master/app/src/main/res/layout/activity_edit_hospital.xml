@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F5F97"
+    tools:context=".hospitago.edit_hospital">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="260dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98">
+
+        <EditText
+            android:id="@+id/ed_edit_hospital_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:hint="hospital name"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:background="@drawable/rounded_background"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal"
+            />
+
+        <EditText
+            android:id="@+id/ed_hospital_position"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="7dp"
+            android:hint="Position in the hospital"
+            android:inputType="text"
+            android:background="@drawable/rounded_background"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/ed_edit_hospital_phone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_background"
+            android:drawablePadding="7dp"
+            android:hint="Hospital Phone "
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="294dp"
+        android:layout_height="218dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/edit" />
+
+    <ImageButton
+        android:id="@+id/btn_hospital_edit"
+        android:layout_width="267dp"
+        android:layout_height="68dp"
+        android:layout_gravity="right"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/back_hospital_elevated"
+        android:drawablePadding="10dp"
+        android:onClick="edit"
+        android:padding="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.204"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/graphiksemibold"
+        android:text="Confirm your edit"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_hospital_edit"
+        app:layout_constraintEnd_toEndOf="@+id/btn_hospital_edit"
+        app:layout_constraintStart_toStartOf="@+id/btn_hospital_edit"
+        app:layout_constraintTop_toTopOf="@+id/btn_hospital_edit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

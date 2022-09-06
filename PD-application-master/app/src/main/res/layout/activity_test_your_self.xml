@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#473F97"
+    tools:context=".TestYourSelf">
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:background="#473F97"
+        android:layout_margin="10dp"
+        />
+ <com.airbnb.lottie.LottieAnimationView
+     android:id="@+id/lottieAnimationView9"
+     android:layout_width="70dp"
+     android:layout_height="70dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginStart="160dp"
+     app:lottie_autoPlay="true"
+     app:lottie_loop="true"
+     app:lottie_rawRes="@raw/temp" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="30dp"
+        android:textColor="#ccc"
+        android:textAlignment="center"
+        android:text="In this section you can monitor your temperature over a period of days or a week, which helps in the early detection of the presence of the virus"
+        />
+    <Button
+        android:id="@+id/btnLineChart"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background"
+        android:text="your temprature"
+        android:textColor="#000"
+        android:textStyle="bold"
+       />
+
+    <com.airbnb.lottie.LottieAnimationView
+     android:id="@+id/lottieAnimationView8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+     app:lottie_autoPlay="true"
+     app:lottie_loop="true"
+     app:lottie_rawRes="@raw/doctor_droid" />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="30dp"
+        android:textColor="#ccc"
+        android:textAlignment="center"
+        android:text="In this section you can chat with a medical assistant, tell your symptoms and give you a diagnosis based on them"
+        />
+
+    <Button
+        android:id="@+id/btnDoctor"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/rounded_background"
+        android:stateListAnimator="@null"
+        android:text="Doctor Droid"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+     app:lottie_autoPlay="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="-160dp"
+     app:lottie_loop="true"
+     app:lottie_rawRes="@raw/hospital" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:textSize="14sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="30dp"
+        android:textColor="#ccc"
+        android:textAlignment="center"
+        android:text="In this section, you can discover hospitals near you and their availablity, moreover that you can contact them and ask for help"/>
+
+    <Button
+        android:id="@+id/btnHospital"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background"
+        android:stateListAnimator="@null"
+        android:text="Find Hospital"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

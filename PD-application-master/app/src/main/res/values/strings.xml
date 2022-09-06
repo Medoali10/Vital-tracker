@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">P.D application</string>
+    <string name="title_activity_nearby_hospitals">Map</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Find an address</string>
+    <string name="nothing_found">Nothing found for</string>
+</resources>
