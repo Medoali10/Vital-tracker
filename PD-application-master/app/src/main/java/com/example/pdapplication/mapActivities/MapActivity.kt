@@ -176,7 +176,8 @@ class MapActivity : AppCompatActivity() {
 
     private fun setupLocator() {
         val locatorService =
-            "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+            "https://geocode.arcgis.com/arcgis/rest/services/World/Geo" +
+                    "codeServer"
         mLocatorTask = LocatorTask(locatorService)
         mLocatorTask!!.addDoneLoadingListener {
             if (mLocatorTask!!.loadStatus == LoadStatus.LOADED) {

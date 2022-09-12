@@ -14,10 +14,10 @@ class Intro_activity : AppCompatActivity() {
 
 //        shift to the main activity
 
-        splash_btn.setOnClickListener {
-            startActivity(Intent(this , MainActivity::class.java))
-            finish()
-        }
+     linearLayout.setOnClickListener {
+         startActivity(Intent(this , MainActivity::class.java))
+         finish()
+     }
 
 //        click the bell to call the map
 

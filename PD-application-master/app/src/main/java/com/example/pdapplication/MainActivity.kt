@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.pdapplication.mapActivities.MapActivity
+import com.example.pdapplication.statistics.Slider_info
 import com.example.pdapplication.statistics.Statistics
 import com.onesignal.OneSignal
 import kotlinx.android.synthetic.main.activity_main.*
@@ -51,10 +52,19 @@ class MainActivity : AppCompatActivity() {
 
 //        open to LINE Chart and doctor droid
 
-        testYourseld.setOnClickListener {
+        testyourself.setOnClickListener {
             startActivity(Intent(this , TestYourSelf::class.java))
         }
+// open the tips activity
+        tips.setOnClickListener {
+            startActivity(Intent(this@MainActivity , TipsActivity::class.java))
+        }
 
+        //  open the slider info activity
+
+        button_why.setOnClickListener {
+            startActivity(Intent(this@MainActivity, Slider_info::class.java))
+        }
     }
 
 //    ask for permissions and PHONE call function

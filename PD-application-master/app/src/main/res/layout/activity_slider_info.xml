@@ -11,20 +11,32 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="28dp"
         android:fontFamily="sans-serif-medium"
-        android:text="#Stay_Safe"
-        android:textColor="#473F97"
+        android:text="#Stay_Healthy"
+        android:textColor="#000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="call the map"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000"
+            app:layout_constraintEnd_toStartOf="@+id/bell_urgent3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="4dp" />
+
     <ImageView
-        android:id="@+id/bell_urgent3"
-        android:layout_width="43dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/bell_24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/bell_urgent3"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/bell_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView2"
         android:layout_width="415dp"
@@ -44,7 +56,7 @@
         android:fontFamily="@font/anaheim"
         android:lineHeight="28dp"
         android:padding="6dp"
-        android:text="covid 19 spread is increasing day by day and there are many affected countries around the world. it is important to understand the current situation of the disease moreover, take all the precautions to prevent its spread."
+        android:text="General Health has been a grand challenge that faces Egypt over the past decays. In order to raise awareness for this challenge , we are offering you some important statistics and tips that will help  you to maintain your health"
         android:textAlignment="center"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -33,14 +33,14 @@
         android:layout_marginStart="30dp"
         android:textColor="#ccc"
         android:textAlignment="center"
-        android:text="In this section you can monitor your temperature over a period of days or a week, which helps in the early detection of the presence of the virus"
+        android:text="In this section you can monitor your temperature over a period of days or a week, which helps in the early detection of an sort of unusual activities in your body"
         />
     <Button
         android:id="@+id/btnLineChart"
         android:layout_width="325dp"
         android:layout_height="60dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/rounded_background"
         android:text="your temprature"
         android:textColor="#000"
@@ -72,7 +72,7 @@
         android:layout_width="325dp"
         android:layout_height="60dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="200dp"
         android:background="@drawable/rounded_background"
         android:stateListAnimator="@null"
@@ -101,16 +101,15 @@
         android:text="In this section, you can discover hospitals near you and their availablity, moreover that you can contact them and ask for help"/>
 
     <Button
-        android:id="@+id/btnHospital"
-        android:layout_width="325dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_background"
-        android:stateListAnimator="@null"
-        android:text="Find Hospital"
-        android:textColor="#000"
-        android:textStyle="bold"
-        />
+            android:id="@+id/btnHospital"
+            android:layout_width="325dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_background"
+            android:stateListAnimator="@null"
+            android:text="Find Hospital"
+            android:textColor="#000"
+            android:textStyle="bold" />
 
 </LinearLayout>

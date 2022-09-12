@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15989583333333332" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/bell_24dp.xml" value="0.290625" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/call_button.xml" value="0.15989583333333332" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/ic_homebg.xml" value="0.290625" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15989583333333332" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/ic_prevention1.xml" value="0.15989583333333332" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/ic_prevention2.xml" value="0.290625" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/ic_prevention3.xml" value="0.15989583333333332" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/ic_testbanner.xml" value="0.15989583333333332" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/stat_button.xml" value="0.1" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/statistic_button.xml" value="0.1" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/tips_back.xml" value="0.1" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/drawable/why_this.xml" value="0.1" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_detailed_statistics.xml" value="0.176" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_intro_activity.xml" value="0.2" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_main_hospital.xml" value="0.17300724637681159" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_slider_info.xml" value="0.5308219178082192" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_statistics.xml" value="0.264" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_test_your_self.xml" value="0.1793478260869565" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_tips.xml" value="0.264" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/activity_user__main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/card.xml" value="0.1793478260869565" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/fragment_hospital_registration.xml" value="0.17300724637681159" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/login.xml" value="0.17300724637681159" />
+        <entry key="..\:/Integrated/PD-application-master/app/src/main/res/layout/temp_list.xml" value="0.17300724637681159" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <type id="android" />
