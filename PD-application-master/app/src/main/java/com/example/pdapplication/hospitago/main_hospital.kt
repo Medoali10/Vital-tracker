@@ -29,8 +29,8 @@ class main_hospital : AppCompatActivity() {
 //        get the data from the database
 
         val database = FirebaseDatabase.getInstance()
-        val myRef = database.getReference().child("Hospital").child(SplitString(email))
-        val myRef2 = database.getReference().child("types").child(SplitString(email))
+        val myRef = database.getReference().child("Hospital").child(SplitString(email.toString()!!))
+        val myRef2 = database.getReference().child("types").child(SplitString(email.toString()!!))
 
 //      disable your account
 

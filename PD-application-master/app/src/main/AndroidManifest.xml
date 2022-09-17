@@ -41,6 +41,15 @@
                     android:name="android.app.searchable"
                     android:resource="@xml/searchable" />
         </activity>
+
+        <activity
+                android:name="io.flutter.embedding.android.FlutterActivity"
+                android:theme="@style/AppTheme"
+                android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+                android:hardwareAccelerated="true"
+                android:windowSoftInputMode="adjustResize"
+                />
+
         <activity android:name=".lineChart.High_temprature_activity" />
         <activity android:name=".hospitago.disabled_account" />
         <activity android:name=".hospitago.Hospitago" />

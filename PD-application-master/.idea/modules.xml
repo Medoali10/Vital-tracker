@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PD-application-master.iml" filepath="$PROJECT_DIR$/.idea/PD-application-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../doctoroid_module/doctoroid_module.iml" filepath="$PROJECT_DIR$/../doctoroid_module/doctoroid_module.iml" />
     </modules>
   </component>
 </project>

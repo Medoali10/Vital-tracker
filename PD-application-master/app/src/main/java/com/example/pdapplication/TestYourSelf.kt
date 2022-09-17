@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.pdapplication.hospitago.Hospitago
 import com.example.pdapplication.lineChart.LineChartAcivity
 import kotlinx.android.synthetic.main.activity_test_your_self.*
-// import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterActivity
 
 
 class TestYourSelf : AppCompatActivity() {
@@ -27,10 +27,10 @@ class TestYourSelf : AppCompatActivity() {
             startActivity(Intent(this , MainActivity::class.java))
         }
 
-  /*      btnDoctor.setOnClickListener {
+     btnDoctor.setOnClickListener {
             startActivity(FlutterActivity.createDefaultIntent(this))
         }
-   */
+
 //        go to the HOPITALS activity
 
         btnHospital.setOnClickListener {
