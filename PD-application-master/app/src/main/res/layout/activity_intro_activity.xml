@@ -7,15 +7,18 @@
     tools:context=".Intro_activity">
 
     <TextView
-        android:layout_width="155dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="#Stay_healthy"
-        android:textColor="#000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:layout_width="155dp"
+            android:layout_height="21dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="#Stay_healthy"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bell_urgent2"
+            app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView5"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.3"
+            android:id="@+id/textView6" />
 
     <TextView
             android:layout_width="85dp"
@@ -26,20 +29,22 @@
             android:id="@+id/textView5"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="52dp" />
+            app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView5"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintVertical_bias="0.26999998"
+            app:layout_constraintHorizontal_bias="0.64" />
 
     <ImageView
             android:id="@+id/bell_urgent2"
-            android:layout_width="43dp"
-            android:layout_height="52dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/bell_24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintHorizontal_bias="0.0" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView5"
+            app:layout_constraintVertical_bias="0.26" />
 
     <com.airbnb.lottie.LottieAnimationView
             android:layout_marginTop="108dp"
@@ -53,33 +58,38 @@
             app:lottie_rawRes="@raw/doctorandhealth"
             app:layout_constraintHorizontal_bias="0.545"
             app:layout_constraintBottom_toTopOf="@+id/textView15"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            android:id="@+id/lottieAnimationView5" />
 
     <TextView
-            android:layout_width="398dp"
-            android:layout_height="213dp"
-            android:layout_marginBottom="24dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:fontFamily="@font/anaheim"
             android:lineHeight="25dp"
-            android:padding="10dp"
+            android:padding="15dp"
             android:text="Vital tracker is a fully integrated system which can help you to track , take care of , and maintain your health. It provides plenty of health services for the user in order to face the general health challenge in Egypt. you can discover and start to utilize these services by clicking the get started bottom below.\n#Your_health_ is_your_piority"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.461"
-            android:id="@+id/textView15" />
+            app:layout_constraintHorizontal_bias="0.307"
+            android:id="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView5" />
 
     <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="416dp"
+            android:layout_width="0dp"
             android:layout_height="81dp"
             android:background="#473F97"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.6">
 
         <TextView
                 android:id="@+id/splash_text"
@@ -94,7 +104,7 @@
 
         <ImageButton
                 android:id="@+id/splash_btn"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="240dp"
                 android:layout_marginTop="10dp"

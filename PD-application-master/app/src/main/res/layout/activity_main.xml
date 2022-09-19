@@ -4,108 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:padding="15dp"
     android:background="@drawable/ic_homebg"
     tools:context=".MainActivity">
 
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="call the map"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-black"
-            android:textColor="#FFF"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/bell_urgent"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="8dp" />
-
     <ImageView
-        android:id="@+id/bell_urgent"
-        android:layout_width="24sp"
-        android:layout_height="24sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_bell" />
+            android:id="@+id/bell_urgent"
+            android:layout_width="17dp"
+            android:layout_height="18dp"
+            app:srcCompat="@drawable/ic_bell"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/graphiksemibold"
-        android:text="Vital tracker"
-        android:textColor="#FFFFFF"
-        android:textSize="29sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bell_urgent" />
-
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/graphiksemibold"
+            android:text="Vital tracker"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            app:layout_constraintTop_toBottomOf="@+id/bell_urgent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.533" />
 
     <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
             android:fontFamily="@font/graphiksemibold"
             android:text="Are you feeling sick?"
             android:textColor="#FFFFFF"
-            android:textSize="23sp"
+            android:textSize="28sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.01" />
 
     <TextView
             android:id="@+id/textView3"
-            android:layout_width="374dp"
-            android:layout_height="84dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/graphikregular"
             android:lineSpacingExtra="8dp"
             android:text="If you feel sick or not well \nplease call or SMS us immediately for help."
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintBottom_toTopOf="@+id/callnow"
+            app:layout_constraintHorizontal_bias="0.466" />
 
     <Button
             android:id="@+id/callnow"
-            android:layout_width="144dp"
-            android:layout_height="59dp"
-            android:layout_marginStart="132dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/call_button"
             android:drawableLeft="@drawable/ic_phone"
             android:drawablePadding="8dp"
             android:fontFamily="@font/graphikmedium"
-            android:paddingLeft="16dp"
             android:text="CALL NOW"
 
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView4"
+            android:padding="20dp"
+            app:layout_constraintHorizontal_bias="0.498" />
 
     <ImageView
             android:id="@+id/testyourself"
-            android:layout_width="349dp"
-            android:layout_height="164dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/ic_testbanner"
+            app:layout_constraintTop_toBottomOf="@+id/button_why"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/stat"
-            android:layout_marginBottom="4dp" />
+            app:layout_constraintBottom_toTopOf="@+id/stat" />
 
     <Button
             android:id="@+id/stat"
-            android:layout_width="164dp"
-            android:layout_height="66dp"
-            android:layout_marginEnd="40dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/stat_button"
             android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
             android:fontFamily="@font/graphiksemibold"
@@ -116,15 +109,17 @@
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-
+            app:layout_constraintEnd_toStartOf="@+id/tips"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="56dp" />
+            app:layout_constraintTop_toBottomOf="@+id/testyourself"
+            app:layout_constraintHorizontal_bias="0.38"
+            android:layout_marginEnd="8dp" />
 
     <Button
             android:id="@+id/tips"
-            android:layout_width="166dp"
-            android:layout_height="64dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/stat_button"
             android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
             android:fontFamily="@font/graphiksemibold"
@@ -136,10 +131,9 @@
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.126"
-            android:layout_marginBottom="56dp" />
+            app:layout_constraintStart_toEndOf="@+id/stat"
+            app:layout_constraintTop_toBottomOf="@+id/testyourself"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     <com.airbnb.lottie.LottieAnimationView
             android:layout_width="124dp"
@@ -147,21 +141,23 @@
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/why"
+            android:id="@+id/lottieAnimationView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/button_why"
-            app:layout_constraintHorizontal_bias="0.512"
-            android:layout_marginBottom="4dp" />
+            app:layout_constraintTop_toBottomOf="@+id/callnow"
+            app:layout_constraintBottom_toTopOf="@+id/button_why" />
 
     <Button
             android:text="Why are we delivering this?"
             android:textColor="#fff"
-            android:layout_width="269dp"
-            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/why_this"
             android:id="@+id/button_why"
+            app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/callnow"
-            android:layout_marginTop="132dp" />
+            app:layout_constraintBottom_toTopOf="@+id/testyourself"
+            app:layout_constraintHorizontal_bias="0.49"
+            android:padding="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

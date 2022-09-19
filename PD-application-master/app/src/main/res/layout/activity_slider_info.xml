@@ -4,75 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:padding="15dp"
     tools:context=".statistics.Slider_info">
-    <TextView
-        android:layout_width="155dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="#Stay_Healthy"
-        android:textColor="#000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="call the map"
-            android:fontFamily="sans-serif-black"
+            android:layout_width="155dp"
+            android:layout_height="21dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="#Stay_Healthy"
             android:textColor="#000"
-            app:layout_constraintEnd_toStartOf="@+id/bell_urgent3"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="4dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView2"
+            app:layout_constraintVertical_bias="0.75"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/textView7" />
 
     <ImageView
             android:id="@+id/bell_urgent3"
             android:layout_width="24sp"
             android:layout_height="24sp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
             android:src="@drawable/bell_24dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView2"
+            app:layout_constraintVertical_bias="0.558"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.883" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieAnimationView2"
-        android:layout_width="415dp"
-        android:layout_height="546dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/why_this" />
+            android:id="@+id/lottieAnimationView2"
+            android:layout_width="400dp"
+            android:layout_height="355dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/why_this"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintVertical_bias="0.816" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="407dp"
-        android:layout_height="161dp"
-        android:layout_marginBottom="168dp"
-        android:fontFamily="@font/anaheim"
-        android:lineHeight="28dp"
-        android:padding="6dp"
-        android:text="General Health has been a grand challenge that faces Egypt over the past decays. In order to raise awareness for this challenge , we are offering you some important statistics and tips that will help  you to maintain your health"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="161dp"
+            android:layout_marginBottom="144dp"
+            android:fontFamily="@font/anaheim"
+            android:lineHeight="28dp"
+            android:padding="6dp"
+            android:text="General Health has been a grand challenge that faces Egypt over the past decays. In order to raise awareness for this challenge , we are offering you some important statistics and tips that will help  you to maintain your health"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/feel_sick"
-        android:layout_width="216dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/purple_back"
-        android:elevation="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            android:id="@+id/feel_sick"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:background="@drawable/purple_back"
+            android:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
