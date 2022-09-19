@@ -5,19 +5,27 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
-        <option name="testRunner" value="PLATFORM" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4-all/ankdp27end7byghfw1q2sw75f/gradle-5.6.4" />
         <option name="gradleJvm" value="1.8" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/../../../../../../Src/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-3.4.8/android" />
+            <option value="$PROJECT_DIR$/../../../../../../Src/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.22.0/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../doctoroid_module/.android/Flutter" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
-        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../doctoroid_module" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-7.3" />
+        <option name="gradleJvm" value="1.8" />
       </GradleProjectSettings>
     </option>
   </component>

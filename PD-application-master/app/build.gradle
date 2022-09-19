@@ -1,6 +1,6 @@
-apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
 
@@ -48,8 +48,12 @@ android {
         }
 
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            ndk {
+                abiFilters "armeabi-v7a", "armeabi" // includes ARM SO files only, so no x86 SO file
+            }
         }
     }
     compileOptions {
@@ -57,6 +61,9 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {

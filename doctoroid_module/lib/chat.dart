@@ -403,7 +403,7 @@ Widget header(BuildContext context) {
                 color: Colors.white,
               ),
             ),
-            SizedBox(width: 50,)
+            SizedBox(width: 52,)
 ,            Text(
               'conversation',
               style: TextStyle(
@@ -457,7 +457,7 @@ Widget receiver(String message, String time) {
     children: [
           Avatar(
         image: 'assets/robot.png',
-        size: 50,
+        size: 48,
       ),
       Flexible(
         child: Container(

@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'chat.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
-import 'firebase_options.dart';
 
 final firestore = FirebaseFirestore.instance;
 Future<void> dR(String txt) async {
@@ -79,7 +78,7 @@ color: Colors.indigo
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  SizedBox(height: 10,),
+                  SizedBox(height: 12,),
                 ],
               ),
             ),
@@ -100,7 +99,7 @@ color: Colors.indigo
                       onChanged: (_) => setState((){}),
                             decoration:  InputDecoration(labelText: "Enter your Username",
                               errorText: _nameController.text.isEmpty ? 'Value Can\'t Be Empty' : null,)),
-                        SizedBox(height: 10,),
+                        SizedBox(height: 12,),
                         TextField(
                           controller: _ageController,
                           onChanged: (_) => setState((){}),
@@ -139,7 +138,7 @@ color: Colors.indigo
                             });
                           },
                         ),
-                        SizedBox(height: 10,),
+                        SizedBox(height: 12,),
                         CustomButton(
                           text: "DONE",
                           callback: () {
